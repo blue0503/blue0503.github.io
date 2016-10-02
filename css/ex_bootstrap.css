@@ -1,0 +1,16 @@
+     table, th, td {
+    border: 1px solid black;
+    background-color: deepskyblue;
+}
+
+
+
+#s{
+color: red;
+}
+
+
+
+.box div { float:left;}
+.box .left {border:1px #000 solid;width:640px; }
+.box .right {border:1px #000 solid;width:640px; }
