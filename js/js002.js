@@ -1,8 +1,8 @@
-function sayHello(){
+function sayHello() {
     //console.log('Hello');
 
-    var str= $("#input").val();
-      $("#output").text(str);
+    var str = $("#input").val();
+    $("#output").text(str);
 }
 
-$("#test").bind('click',sayHello);
+$("#test").bind('click', sayHello);
