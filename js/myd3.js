@@ -8,7 +8,21 @@ var svgctrl = d3.select('svg');
 var cx = 325;
 
 var c1 = svgctrl.append('polygon');
-c1.attr('x1', cx).attr('y1', 25).attr('x2', cx + 75).attr('y2', 90).attr('x3', cx - 75).attr('y3', 90).attr('fill', 'pink').attr('stroke', 'pink').attr('stroke-width', 5);
-
+c1.attr('points', '400,90 325,25 250,90').attr('fill', 'pink').attr('stroke', 'pink').attr('stroke-width', 5);
 var c2 = svgctrl.append('rect');
-c1.attr('x', 250).attr('cy1', 90).attr('cx3', cx - 75).attr('cy3', 90).attr('fill', 'pink').attr('stroke', 'pink').attr('stroke-width', 5);
+c2.attr('x', cx - 75).attr('y', 90).attr('width', 150).attr('height', 100).attr('fill', 'blue').attr('stroke', 'pink').attr('stroke-width', 5).attr('fill-opacity', 0.1).attr('stroke-opacity', 0.9);
+var c3 = svgctrl.append('rect');
+c3.attr('x', cx - 25).attr('y', 140).attr('width', 50).attr('height', 50).attr('fill', 'rgb(0,0,255)').attr('stroke-width', 3).attr('stroke', 'gb(32, 32, 244)');
+var c4 = svgctrl.append('circle');
+c4.attr('cx', cx - 45).attr('cy', 115).attr('r', 10).attr('stroke', 'purple').attr('stroke-width', 3).attr('fill', 'purple');
+var c5 = svgctrl.append('circle');
+c5.attr('cx', cx + 45).attr('cy', 115).attr('r', 10).attr('stroke', 'purple').attr('stroke-width', 3).attr('fill', 'purple');
+
+
+var btn_click = document.getElementById("move");
+var box = document.querySelector(".col-xl-12");
+var a = 0;
+btn_click.onclick = function() {
+    a = a + 50;
+    box.style.left = a + 'px';
+}
