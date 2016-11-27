@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node",
+            "request": "launch",
+            "name": "read index",
+            "program": "${workspaceRoot}/read index.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加至處理序",
+            "port": 5858
+        }
+    ]
+}
